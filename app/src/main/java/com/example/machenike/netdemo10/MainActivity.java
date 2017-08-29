@@ -10,6 +10,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
+import com.example.machenike.netdemo10.MVP.MVPRegisterActivity;
+
 import java.io.IOException;
 
 import okhttp3.Call;
@@ -113,5 +115,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void skip(View view) {
         startActivity(new Intent(MainActivity.this,RetrofitActivity.class));
+    }
+
+    public void mvp(View view) {
+        startActivity(new Intent(MainActivity.this, MVPRegisterActivity.class));
     }
 }

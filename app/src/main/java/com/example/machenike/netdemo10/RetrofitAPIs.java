@@ -25,7 +25,7 @@ public interface RetrofitAPIs {
 
 
     @POST("http://admin.syfeicuiedu.com/Handler/UserHandler.ashx?action=register")
-    Call<ResponseBody> postRequest(@Body RequestBody body);
+    Call<UserResult> postRequest(@Body User user);
 
     @FormUrlEncoded
     @POST("http://wx.feicuiedu.com:9094/yitao/UserWeb?method=register")
